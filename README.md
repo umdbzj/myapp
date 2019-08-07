@@ -1,9 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This web application is a demonstration for Grinnell College's Software Design and Development course (CSC 324).
+As an example - that will become useful in future semesters - this dynamic page will be the website for 
+another course that I teach: CSC 105 The Digital Age.  
 
-Things you may want to cover:
+We are using 
+
+Details:
 
 * Ruby version
 
