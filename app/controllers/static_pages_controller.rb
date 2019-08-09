@@ -16,4 +16,8 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+  
+  def resources
+  end
+  
 end

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'static_pages/deadlines'
 
   get 'static_pages/help'
+  
+  get 'static_pages/resources'
 
-    root 'application#hello'
+  root 'application#hello'
 end
