@@ -20,4 +20,10 @@ class StaticPagesController < ApplicationController
   def resources
   end
   
+  def contact
+  end
+  
+  def about
+  end
+  
 end

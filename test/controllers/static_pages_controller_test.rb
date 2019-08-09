@@ -2,45 +2,57 @@ require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get static_pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "CSC 105 Home"
   end
 
   test "should get schedule" do
-    get static_pages_schedule_url
+    get schedule_path
     assert_response :success
     assert_select "title", "CSC 105 Schedule"
   end
 
   test "should get labs" do
-    get static_pages_labs_url
+    get labs_path
     assert_response :success
     assert_select "title", "CSC 105 Labs"
   end
 
   test "should get homework" do
-    get static_pages_homework_url
+    get homework_path
     assert_response :success
     assert_select "title", "CSC 105 Homework"
   end
 
   test "should get deadlines" do
-    get static_pages_deadlines_url
+    get deadlines_path
     assert_response :success
     assert_select "title", "CSC 105 Deadlines"
   end
 
   test "should get help" do
-    get static_pages_help_url
+    get help_path
     assert_response :success
     assert_select "title", "CSC 105 Help"
   end
   
   test "should get resources" do
-  	get static_pages_resources_url
+  	get resources_path
   	assert_response :success
   	assert_select "title", "CSC 105 Resources"
+  end
+  
+  test "should get contact" do
+  	get contact_path
+  	assert_response :success
+  	assert_select "title", "CSC 105 Contact"
+  end
+  
+  test "should get about" do
+  	get about_path
+  	assert_response :success
+  	assert_select "title", "CSC 105 About"
   end
 
 end
