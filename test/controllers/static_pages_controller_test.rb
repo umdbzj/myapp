@@ -49,10 +49,24 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   	assert_select "title", "CSC 105 Contact"
   end
   
+  test "instance variables not nil" do
+  	get contact_path
+  	assert_response :success
+  	assert_not_nil assigns(:name)
+  	assert_not_nil assigns(:adj)
+  	assert_not_nil assigns(:profaction)
+  	assert_not_nil assigns(:adv)
+  	assert_not_nil assigns(:act)
+  	assert_not_nil assigns(:result)
+  	assert_not_nil assigns(:result2)
+  end
+  
   test "should get about" do
   	get about_path
   	assert_response :success
   	assert_select "title", "CSC 105 About"
   end
+  
+  
 
 end
