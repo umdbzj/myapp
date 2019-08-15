@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/add_reading', to: 'readings#new'
+
   get '/schedule', to: 'static_pages#schedule'
 
   get '/labs', to: 'static_pages#labs'
