@@ -11,7 +11,6 @@ ruby '2.6.3'
 gem 'rails', '~> 5.1.6'
 gem 'bootstrap-sass', '3.3.7'
 
-gem 'rails-controller-testing'
 
 # Use Puma as the app server
 gem 'puma', '3.9.1'
@@ -46,6 +45,12 @@ group :development, :test do
   
   # Use sqlite3 as the database for Active Record in development and testing only
 gem 'sqlite3', '1.3.13'
+
+# to fix errors when trying to test controller to see if instance variables are not nil
+gem 'rails-controller-testing'
+
+# to attempt to fix readline errors when trying to run rails console
+gem 'rb-readline'
 
 end
 
