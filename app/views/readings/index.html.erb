@@ -1,0 +1,22 @@
+<% provide(:title, 'All Readings') %>
+<h1>All Readings</h1>
+<p>Hopefully, all the readings will show up here.  Not in order yet. And it should
+mostly end up in the Schedule page.  Although this could be a course bibliography. </p>
+<table width=95%">
+	<thead>
+		<tr>
+			<th>Author</th>
+			<th>Title</th>
+			<th>Assignment</th>
+			<th>Day Due</th>
+		</tr>
+	</thead>
+	<% @readings.each do |reading| %>
+	<tr>
+		<td><%= reading.author %></td>
+		<td><%= reading.title %></td>
+		<td><%= reading.assign %></td>
+		<td><%= reading.day %></td>
+	</tr>
+	<% end %>
+</table>
