@@ -1,4 +1,23 @@
 <% provide(:title, 'Add Reading') %>
-<h1>Add Readings</h1>
+<h1>Add a Reading</h1>
 <p>This page is for the instructor to use when setting up the course and creating a
 list of readings.  </p>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<%= form_for(@reading) do |f| %>
+			<%= f.label :author %>
+			<%= f.text_field :author %>
+			
+			<%= f.label :title %>
+			<%= f.text_field :title %>
+			
+			<%= f.label :assign %>
+			<%= f.text_field :assign %>
+			
+			<%= f.label :day %>
+			<%= f.number_field :day %>
+			
+			<%= f.submit "Add Reading", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
