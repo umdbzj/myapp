@@ -16,6 +16,7 @@ class ReadingsController < ApplicationController
   	@reading = Reading.new(reading_params)
   	
   	if @reading.save
+  		flash[:success] = "Reading added to list"
   		redirect_to readings_path   # different from Hartl 7.4 and displaying all readings and not just the new one
   	else
   		render 'new'

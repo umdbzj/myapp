@@ -5,17 +5,19 @@ list of readings.  </p>
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 		<%= form_for(@reading) do |f| %>
+			<%= render '/shared/error_messages' %>
+			
 			<%= f.label :author %>
-			<%= f.text_field :author %>
+			<%= f.text_field :author, class: 'form-control' %>
 			
 			<%= f.label :title %>
-			<%= f.text_field :title %>
+			<%= f.text_field :title, class: 'form-control' %>
 			
 			<%= f.label :assign %>
-			<%= f.text_field :assign %>
+			<%= f.text_field :assign, class: 'form-control' %>
 			
 			<%= f.label :day %>
-			<%= f.number_field :day %>
+			<%= f.number_field :day, class: 'form-control' %>
 			
 			<%= f.submit "Add Reading", class: "btn btn-primary" %>
 		<% end %>
