@@ -43,6 +43,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   	assert_select "title", "CSC 105 Resources"
   end
   
+    test "should get instructor tools" do
+  	get instructor_path
+  	assert_response :success
+  	assert_select "title", "CSC 105 Instructor Tools"
+  end
+  
   test "should get contact" do
   	get contact_path
   	assert_response :success

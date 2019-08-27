@@ -20,6 +20,9 @@ class StaticPagesController < ApplicationController
   def resources
   end
   
+  def instructor
+  end
+  
   def contact
   	nameList = ["Professor Johnson", "Barbara", "Dr. Johnson", "Ms. Johnson"]
   	nameNum = (0..nameList.length-1).to_a.shuffle.first

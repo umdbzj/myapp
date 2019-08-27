@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   
   get '/resources', to: 'static_pages#resources'
   
+  get '/instructor', to: 'static_pages#instructor'
+  
   get '/contact', to: 'static_pages#contact'
   
   get '/about', to: 'static_pages#about'
