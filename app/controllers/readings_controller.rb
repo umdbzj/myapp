@@ -1,7 +1,8 @@
 class ReadingsController < ApplicationController
 
   def index
-  	@readings = Reading.all
+  	reading_list = Reading.all
+  	@readings = reading_list.sort_by(&:day)
   end
   
   def show
