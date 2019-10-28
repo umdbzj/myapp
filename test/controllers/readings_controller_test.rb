@@ -17,7 +17,7 @@ class ReadingsControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "title should be present" do
-  	@reading.title = "       "
+  	@reading.title = "     "
   	assert_not @reading.valid?
   end
 

@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  author: MyString
-  title: MyString
-  assign: MyString
+  author: First Author
+  title: Some Book
+  assign: All of it
   day: 1
 
 two:
-  author: MyString
-  title: MyString
-  assign: MyString
-  day: 1
+  author: Second Author
+  title: Another Book
+  assign: Chapter 1
+  day: 2
