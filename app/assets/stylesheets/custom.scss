@@ -50,10 +50,17 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 2em;
 	letter-spacing: -1px;
 	margin-bottom: 30px;
-	text-align: center;
+	font-weight: normal;
+	color: #777;
+}
+
+h3 {
+	font-size: 1.75em;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	color: #777;
 }
@@ -88,6 +95,35 @@ p {
 	text-decoration: none;
 }
 
+/* schedule formatting */
+.schedule {
+	margin-left: 20px;
+
+	border-collapse: collapse;
+}
+
+.schedule td {
+	border: 1px solid black;
+    padding-left: 1ex;
+    padding-top: 0.25ex;
+    padding-bottom: 0.25ex;
+}
+
+.date {
+	font-weight: bold;
+}
+
+.break {
+	background-color:#e6c8c7;
+}
+
+ .sched_week0 {
+    background-color: #f0e8de;
+}
+
+ .sched_week1 {
+    background-color: #cae4db; 
+}
 
 
 

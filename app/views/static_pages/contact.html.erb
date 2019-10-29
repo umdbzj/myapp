@@ -13,5 +13,24 @@ and listed below) or make an appointment. </p>
 question during these activities, there is a <%= @result %>% probability that the answer will be <%= @result2 %>% correct.  </p>
 
 <h2>Office Hours</h2>
-<p>Office hours will be determined at the beginning of the term, based on a poll of
-students.  If you need to meet with me before that, please send me an email at johnsonba at grinnell.edu</p>
+<% t = Time.now %>
+<p><%= t.strftime("Today is %B %d, %Y!") %>
+
+
+<% if t.tuesday? %>
+	<p>I have office hours today from 10 am to noon, 1 pm to 2 pm, and 4 pm to 5 pm.</p>
+<% elsif t.thursday? %>
+	<p>I have office hours today from 11 am to noon.</p>
+<% else %>
+	<p>I do not have office hours today, but if you need to meet with me, contact me at johnsonba@grinnell.edu to arrange an appointment.<p>
+<% end %>
+
+<p>Generally, my office hours schedule this fall is:</p>
+<p>Tuesdays 10 am to noon; 1 pm to 2 pm; 4 pm to 5 pm    
+	<p>Thursdays 11 am to noon
+	(except when we have Convocation)<p>Other times are possible by appointment!    
+<p>Remember, my office is in Noyce 2811 (second floor ... not third).    </p>
+<p>If the door is closed, please assume that I am meeting with someone. If none of these times work for you, check
+ <a href="https://outlook.office365.com/owa/calendar/8ad4300a21d343ba8098d7a8e2af86a2@grinnell.edu/0aedf2fe8ea048a086a0c96cca17b6562741702702650277319/calendar.html">
+ my calendar</a> for an available time and email me to set up an appointment. </p>
+

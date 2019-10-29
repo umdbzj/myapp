@@ -28,11 +28,11 @@ class StaticPagesController < ApplicationController
   	nameNum = (0..nameList.length-1).to_a.shuffle.first
 	@name = nameList[nameNum]
 	
-	adjList = ["usually", "reliably", "most often", "frequently", "indubitably"]
+	adjList = ["usually", "reliably", "most often", "frequently", "indubitably", "generally"]
 	adjNum = (0..adjList.length-1).to_a.shuffle.first
 	@adj = adjList[adjNum]
 	
-	profList = ["teaching", "attending meetings", "serving on a committee", "in office hours"]
+	profList = ["teaching", "attending meetings", "serving on a committee", "in office hours", "eating lunch", "taking a walk"]
 	profNum = (0..profList.length-1).to_a.shuffle.first
 	@profaction = profList[profNum]
 	
