@@ -4,8 +4,10 @@
 allow students to choose a specialty and have this site tailor the readings and assignments
 list to include the core, required items plus those that the student needs to complete in
 order to finish their specialty.   </p>
-<p> the reading list is now displayed, sorted by day.  Next step is to add a field in the readings 
-database for the topic and change the table to include it.</p> 
+<p> The reading list is now displayed, sorted by day.  The Edit link needs to be hidden
+unless the instructor is signed in (with admin credentials) or this page needs to be
+copied and linked only from the instructor tools page and accessible only by the 
+instructor.</p> 
 <table width=95%">
 	<thead>
 		<tr>
@@ -13,6 +15,7 @@ database for the topic and change the table to include it.</p>
 			<th>Title</th>
 			<th>Assignment</th>
 			<th>Day Due</th>
+			<th>Update</th>
 		</tr>
 	</thead>
 	<% @readings.each do |reading| %>
@@ -21,6 +24,7 @@ database for the topic and change the table to include it.</p>
 		<td><%= reading.title %></td>
 		<td><%= reading.assign %></td>
 		<td><%= reading.day %></td>
+		<td><%= link_to "Edit", edit_reading_path(reading.id) %></td>
 	</tr>
 	<% end %>
 </table>

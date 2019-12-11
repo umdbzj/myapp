@@ -1,0 +1,25 @@
+<% provide(:title, 'Edit reading') %>
+<h1>Edit a Reading</h1>
+<p>This page is for the instructor to use when setting up the course and modifying a
+particular entry in the readings list.  </p>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<%= form_for(@reading) do |f| %>
+			<%= render '/shared/error_messages' %>
+			
+			<%= f.label :author %>
+			<%= f.text_field :author, class: 'form-control' %>
+			
+			<%= f.label :title %>
+			<%= f.text_field :title, class: 'form-control' %>
+			
+			<%= f.label :assign %>
+			<%= f.text_field :assign, class: 'form-control' %>
+			
+			<%= f.label :day %>
+			<%= f.number_field :day, class: 'form-control' %>
+			
+			<%= f.submit "Save changes", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
